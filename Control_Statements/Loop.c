@@ -165,6 +165,7 @@ int main()
 	return 0;
 }	*/
 
+/*
 #include<stdio.h>
 int main()
 {
@@ -172,7 +173,124 @@ int main()
 	{
 		printf("hello");
 	}
-}
+}	*/
+
+
+/** For Loop 		**/
+/*
+#include<stdio.h>
+int main()
+{
+	int i = 0;
+	for(i=1;i<=10;i++)
+	{
+		printf("%d \n", i);
+	}
+	return 0;
+}	*/
+
+// Print table for the given number
+/*
+#include<stdio.h>
+int main()
+{
+	int i=1, num=0;
+	printf("Enter a number: ");
+	scanf("%d", &num);
+	for(i=1;i<=10;i++)
+	{
+		printf("%d * %d = %d\n",num, i, (num*i));
+	}
+	return 0;
+}		*/
+
+/*
+#include<stdio.h>
+int main()
+{
+	int a, b, c;
+	for(a=0,b=12,c=23;a<2;a++)
+	{
+		printf("%d ",a+b+c);
+	}
+	return 0;
+}		*/
+/*
+#include<stdio.h>
+int main()
+{
+	int i = 1;
+	for(;i<5;i++)
+	{
+		printf("%d ", i);
+	}
+	return 0;
+}	*/
+
+/*
+#include <stdio.h>
+int main()
+{
+	int i;
+	for(i=0;i<=4;i++)
+	{
+		printf("%d ", i);
+	}
+	return 0;
+}	*/
+
+/*
+#include<stdio.h>
+int main()
+{
+	int i, j, k;
+	for(i=0,j=0,k=0;i<4,k<8,j<10;i++)
+	{
+		printf("%d %d %d\n", i,j,k);
+		j+=2;
+		k+=3;
+	}
+	return 0;
+}	*/
+
+/*
+#include<stdio.h>
+int main()
+{
+	int i;
+	for(i=0;;i++)
+	{
+		printf("%d", i);  // infinite loop
+	}
+	return 0;
+}	*/
+
+
+#include<stdio.h>
+int main()
+{
+	int i=0,j=2;
+	for(i=0;i<5;i++,j=j+2)
+	{
+		printf("%d %d\n",i,j);
+	}
+	return 0;
+}		
+
+/* Infinite for loop */
+/* To make a for loop infinite, we need not give any expression in the syntax.
+Instead of that, we need to provide two semicolons to validate the syntax of the
+loop. This will work as an infinite for loop. */
+/*
+#include<stdio.h>
+int main()
+{
+	for(;;)
+	{
+		printf("Welcome to India");
+	}
+	return 0;
+}	*/
 
 	
 
