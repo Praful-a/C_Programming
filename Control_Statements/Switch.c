@@ -34,7 +34,7 @@ switch(x>y)			switch(x+2.5)	case 'a';		case x;
 switch(a+b-2)						case 1+2;		case x+2;
 switch(func(x,y))					case 'x'>'y';	case 1,2,3;
  */
-
+/*
 #include<stdio.h>
 int main()
 {
@@ -54,6 +54,104 @@ int main()
 		break;
 		default:
 		printf("number is not equals to 10, 50 and 100");
+	}
+	return 0;
+}		*/
+/*
+#include <stdio.h>
+int main()
+{
+	int x = 10, y = 5;
+	switch(x>y && x+y>0)
+	{
+		case 1:
+		printf("hi");
+		break;
+		case 0:
+		printf("bye");
+		break;
+		default:
+		printf("Hello bye");
+	}
+	return 0;
+}		*/
+/*
+#include <stdio.h>
+int main()
+{
+	int number = 0;
+	printf("Enter a number: ");
+	scanf("%d", &number);
+
+	switch(number)
+	{
+		case 10:
+		printf("number is equals to 10\n");
+		case 50:
+		printf("number is equals to 50\n");
+		case 100:
+		printf("number is equals to 100\n");
+		default:
+		printf("number is not equals to 10, 50, 100");
+	}
+	return 0;
+}		*/
+
+// Nested switch case statement
+/*
+#include <stdio.h>
+int main()
+{
+	int i = 10;
+	int j = 20;
+	switch(i) 
+	{
+		case 10:
+			printf("The value of i evaluated in outer switch: %d\n", i);
+		case 20:
+			switch(j)
+			{
+				case 20:
+				printf("The value of j evaluated in nested switch: %d\n", j);
+			}
+	}
+	printf("Exact value of i is: %d \n", i);
+	printf("Exact value of j is : %d\n", j);
+
+	return 0;
+}	*/
+
+#include <stdio.h>
+int main()
+{
+	int n1 = 10, n2 =11;
+	// n1 > n2 (10>11) is false so using
+	// logical operator '>', n1 > n2 produces 0
+	// (0 means false, 1 means true) So, case 0
+	// is executed as 10 > 11 is false. Here we
+	// have used type cast to convert boolean to int,
+	// to avoid warning.
+	/*
+	switch((int)(n1 > n2))
+	{
+		case 0:
+			printf("%d is the largest\n", n2);
+			break;
+		default:
+			printf("%d is the largest\n", n1);
+	}	*/
+
+	// n1 < n2 (10 < 11) is true so using logical
+	// operator '<', n1 < n2 produces 1 (1 means true,
+	// 0 means false) So, default is executed as we
+	// don't have case 1 to be executed.
+
+	switch((int)(n1 < n2))
+	{
+		case 1:
+			printf("%d is the largest\n", n1);
+		default:
+			printf("%d is the largest\n", n2);
 	}
 	return 0;
 }
