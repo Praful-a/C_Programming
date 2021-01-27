@@ -17,6 +17,7 @@ int main()
 }		*/
 
 /* Passing array to a function as a pointer */
+/*
 #include<stdio.h>
 void printarray(char *arr)
 {
@@ -30,5 +31,29 @@ int main()
 {
 	char arr[5] = {'A','B','C','D','E'};
 	printarray(arr);
+	return 0;
+}		*/
+
+/* Returning pointer pointing to the array  */
+#include<stdio.h>
+int *getarray()
+{
+	int arr[5];
+	printf("Enter the elements in an array : ");
+	for(int i=0;i<5;i++)
+	{
+		scanf("%d", &arr[i]);
+	}
+	return arr;
+}
+int main()
+{
+	int *n;
+	n = getarray();
+	printf("Elements of array are: ");
+	for(int i=0;i<5;i++)
+	{
+		printf("%d", n[i]);
+	}
 	return 0;
 }

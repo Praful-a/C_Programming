@@ -119,7 +119,7 @@ void printName()		// function definition
 }		*/
 
 /* Example 2  */
-/*
+
 #include<stdio.h>
 void sum();
 int main()
@@ -134,7 +134,7 @@ void sum()
 	printf("\nEnter two numbers");
 	scanf("%d %d", &a,&b);
 	printf("The sum is %d", a+b);
-}		*/
+}		
 
 /* Example for function without argument and with return type value  */
 /*
@@ -233,7 +233,7 @@ int sum(int a, int b)
 }		*/
 
 /* C function to check whether a number is even or odd  */
-
+/*
 #include<stdio.h>  
 int even_odd(int);  
 int main()  
@@ -263,5 +263,5 @@ int even_odd(int n)
     {  
         return 0;  
     }  
-}  
+} 		*/ 
 
