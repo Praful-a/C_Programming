@@ -10,7 +10,8 @@ int main(){
       scanf("%d",&arr[i]);
 
    // Implementation of insertion sort algorithm
-   for(i=1;i<count;i++){
+   for(i=1;i<count;i++)
+   {
       temp=arr[i];
       j=i-1;
       while((temp<arr[j])&&(j>=0)){
@@ -19,7 +20,6 @@ int main(){
       }
       arr[j+1]=temp;
    }
-
    printf("Order of Sorted elements: ");
    for(i=0;i<count;i++)
       printf(" %d",arr[i]);
