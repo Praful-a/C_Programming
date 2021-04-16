@@ -79,7 +79,7 @@ void display(struct student list[80], int s)
     
     printf("\n\n**************** Displaying Student's Details ****************\n\n");
     printf("\n\tRoll no.\tStudent's Name\tAge\tPercentage");
-    for(i=0;i<2;i++)
+    for(i=0;i < s;i++)
     {
         printf("\n\t--------------------------------------------------");
         printf("\n\t  %d\t", list[i].rollno,"\t\t");
@@ -108,3 +108,32 @@ void bsortDesc(struct student list[80], int s)
         }
     }
 }
+
+/*
+//sorting
+for(i=0;i<3;i++)
+for(j=0;j<3;j++)
+{
+if(st[j].roll>st[j+1].roll)
+{
+    
+    temp=st[j];
+    st[j]=st[j+1];
+    st[j+1]=temp;
+  
+    /*temp.roll=st[j].roll;
+    strcpy(temp.name,st[j].name);
+    temp.age=st[j].age;
+    temp.grad_per=st[j].grad_per;
+    
+    
+    st[j].roll=st[j+1].roll;
+    strcpy(st[j].name,st[j+1].name);
+    st[j].age=st[j+1].age;
+    st[j].grad_per=st[j+1].grad_per;
+    
+    st[j+1].roll=temp.roll;
+    strcpy(st[j+1].name,temp.name);
+    st[j+1].age=temp.age;
+    st[j+1].grad_per=temp.grad_per;*/
+    
